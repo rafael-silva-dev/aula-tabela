@@ -6,42 +6,100 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
+
+    <style>
+        #table-1 {
+            border-collapse: collapse;
+        
+        }
+
+        th, td {
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        th {
+            background-color: #04AA6D;
+            color: white;
+            text-align: center;
+            height: 20px;
+            vertical-align: middle;
+        }
+
+        td {
+            text-align: left;
+            height: 20px;
+            vertical-align: middle;
+        }
+
+        tr:hover {
+            background-color: yellowgreen;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
     <h1>Tabelas</h1>
 
-    <table>
-        <thead>
-            <th>Roupa</th>
-            <th>Cor</th>
-            <th>Tamanho</th>
-            <th>Preço</th>
-            <th>Disponibilidade</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Camiseta</td>
-                <td>Verde</td>
-                <td>M</td>
-                <td>R$ 89,99</td>
-                <td>Em Estoque</td>
-            </tr>
-            <tr>
-                <td>Calça Jeans</td>
-                <td>Azul</td>
-                <td>P</td>
-                <td>R$ 160,00</td>
-                <td>Em Estoque</td>
-            </tr>
-            <tr>
-                <td>Agasalho</td>
-                <td>Azul</td>
-                <td>G</td>
-                <td>R$ 190,00</td>
-                <td>Em Estoque</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="box">
+        <table id="table-1">
+            <thead>
+                <th>Roupa</th>
+                <th>Cor</th>
+                <th>Tamanho</th>
+                <th>Preço</th>
+                <th>Disponibilidade</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#">Camiseta</a></td>
+                    <td>Verde</td>
+                    <td>M</td>
+                    <td>R$ 89,99</td>
+                    <td>Em Estoque</td>
+                </tr>
+                <tr>
+                    <td><a href="#">Calça Jeans</a></td>
+                    <td>Azul</td>
+                    <td>P</td>
+                    <td>R$ 160,00</td>
+                    <td>Em Estoque</td>
+                </tr>
+                <tr>
+                    <td><a href="#">Agasalho</a></td>
+                    <td>Vermelho</td>
+                    <td>G</td>
+                    <td>R$ 190,00</td>
+                    <td>Em Estoque</td>
+                </tr>
+                <tr>
+                    <td><a href="#">Bermuda</a></td>
+                    <td>Roxa</td>
+                    <td>G</td>
+                    <td>R$ 69.99</td>
+                    <td>Em Estoque</td>
+                </tr>
+                <tr>
+                    <td><a href="#">Boné</a></td>
+                    <td>Branco</td>
+                    <td>único</td>
+                    <td>R$ 50.99</td>
+                    <td>Em Estoque</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
 </html>
